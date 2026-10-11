@@ -29,8 +29,8 @@ public class NPCHandler {
 		for(int i = 0; i < maxListedNPCs; i++) {
 			NpcList[i] = null;
 		}
-		loadNPCList("./Data/CFG/npc.cfg");
-		loadAutoSpawn("./Data/CFG/spawn-config.cfg");
+		loadNPCList("./Data/cfg/npc.cfg");
+		loadAutoSpawn("./Data/cfg/spawn-config.cfg");
 	}
 	
 	public void multiAttackGfx(int i, int gfx) {

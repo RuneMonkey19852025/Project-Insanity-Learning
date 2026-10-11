@@ -17,7 +17,7 @@ public class ItemWeight {
     private static void loadWeights() {
         try {
             BufferedReader reader =
-                    new BufferedReader(new FileReader("./data/item_weights.txt"));
+                    new BufferedReader(new FileReader("./Data/item_weights.txt"));
 
             String line;
 

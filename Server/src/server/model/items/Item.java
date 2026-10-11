@@ -128,7 +128,7 @@ public class Item {
 		}
 		
 		/*try {
-            BufferedReader in = new BufferedReader(new FileReader("./data/data/equipment.dat"));
+            BufferedReader in = new BufferedReader(new FileReader("./Data/data/equipment.dat"));
 			String name = null;
             while ((name = in.readLine()) != null) {
                 int itemId = Integer.parseInt(name.substring(0, name.indexOf(":")));

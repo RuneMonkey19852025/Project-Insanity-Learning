@@ -7,7 +7,7 @@ import javax.swing.*;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 
 
-public class Jframe extends client implements ActionListener {
+public class Jframe extends Client implements ActionListener {
 
     private static JMenuItem menuItem;
 	private JFrame frame;
@@ -59,7 +59,7 @@ public class Jframe extends client implements ActionListener {
 			frame.getContentPane().add(gamePanel, BorderLayout.CENTER);
 			frame.pack();
 
-			frame.setVisible(true); // can see the client
+			frame.setVisible(true); // can see the Client
 			frame.setResizable(false); // resizeable frame
 
 			init();

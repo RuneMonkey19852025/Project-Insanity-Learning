@@ -114,7 +114,7 @@ public final class OnDemandFetcher extends OnDemandFetcherParent
 		}
     }
 
-    public void start(StreamLoader streamLoader, client client1) {
+    public void start(StreamLoader streamLoader, Client client1) {
 	String as[] = {  "model_version", "anim_version", "midi_version", "map_version" };
 	for(int i = 0; i < 4; i++)
 	{
@@ -225,7 +225,7 @@ public final class OnDemandFetcher extends OnDemandFetcherParent
 		if(l - openSocketTime < 4000L)
 		    return;
 		openSocketTime = l;
-		socket = clientInstance.openSocket(43594 + client.portOff);
+		socket = clientInstance.openSocket(43594 + Client.portOff);
 		inputStream = socket.getInputStream();
 		outputStream = socket.getOutputStream();
 		outputStream.write(15);
@@ -661,7 +661,7 @@ public final class OnDemandFetcher extends OnDemandFetcherParent
     private final byte[] ioBuffer;
     public int onDemandCycle;
     private final byte[][] fileStatus;
-    private client clientInstance;
+    private Client clientInstance;
     private final NodeList aClass19_1344;
     private int completedSize;
     private int expectedSize;
